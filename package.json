@@ -14,8 +14,9 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build",
+    "copy": "cp ./CNAME ./build/CNAME",
+    "predeploy": "npm run build && npm run copy",
+    "deploy": "gh-pages -d build --branch master",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
