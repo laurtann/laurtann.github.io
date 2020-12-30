@@ -4,6 +4,7 @@ import Header from './Header';
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
 import './App.css';
+import ProjectCard from './ProjectCard'
 
 const font = "'Fira Sans', sans-serif";
 const h123 = "'Noto Sans', sans-serif";
@@ -37,6 +38,7 @@ export default function App() {
       <main>
         <Nav />
         <Header />
+        <ProjectCard />
       </main>
     </ThemeProvider>
   )
