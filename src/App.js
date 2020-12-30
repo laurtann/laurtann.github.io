@@ -1,35 +1,43 @@
-import logo from './laura.png';
+import React from 'react';
+import Nav from './Nav';
+import Header from './Header';
+import { createMuiTheme } from '@material-ui/core/styles';
+import { ThemeProvider } from '@material-ui/styles';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>
-        Hi, I'm Laura! A <strong>Full-Stack Web Developer</strong> based in Halifax, NS.
-        </h1>
-        <h3>Under Construction!</h3>
-          <p>
-            In the meantime, check out a few of my projects:
-          </p>
-          <ul>
-            <li>
-              <p><a href="https://scheduler-laurtann.netlify.app/">Scheduler</a> An Interview Scheduler App</p>
-            </li>
-            <li>
-              <p><a href="https://tweeter-laurtann.herokuapp.com/">Tweeter</a> A Twitter Clone</p>
-            </li>
-            <li>
-              <p><a href="https://tinyapp-laurtann.herokuapp.com/urls">Tinyapp</a> A URL Shortener</p>
-            </li>
-            <li>
-              <p><a href="http://www.lauratannahill.com/robofriends/">Robofriends</a> A Robot Search App</p>
-            </li>
-          </ul>
-      </header>
-    </div>
-  );
-}
+const font = "'Fira Sans', sans-serif";
+const h123 = "'Noto Sans', sans-serif";
 
-export default App;
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: '#303e69'
+    },
+    secondary: {
+      main: '#Ff5f66',
+    },
+  },
+  typography: {
+    fontFamily: font,
+    h1: {
+      fontFamily: h123
+    },
+    h2: {
+      fontFamily: h123
+    },
+    h3: {
+      fontFamily: h123
+    }
+  }
+});
+
+export default function App() {
+  return(
+    <ThemeProvider theme={theme}>
+      <main>
+        <Nav />
+        <Header />
+      </main>
+    </ThemeProvider>
+  )
+};
