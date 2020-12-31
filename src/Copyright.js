@@ -5,7 +5,7 @@ export default function Copyright() {
   return (
     <Typography variant="body2" color="light" align="center">
       {'Copyright © '}
-      <Link color="secondary" href="https://material-ui.com/">
+      <Link color="secondary" href="https://www.lauratannahill.com/">
         Laura Tannahill
       </Link>{' '}
       {new Date().getFullYear()}
