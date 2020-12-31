@@ -20,11 +20,12 @@ const useStyles = makeStyles((theme) => ({
       color: '#Ff5f66',
       backgroundColor: "transparent"
     },
+    textDecoration: "none",
     textTransform: 'none'
   }
 }));
 
-export default function Nav() {
+export default function Nav(props) {
   const classes = useStyles();
 
   return (
@@ -32,8 +33,8 @@ export default function Nav() {
       <div className={classes.root}>
         <AppBar position="fixed" style={{ background: 'transparent', boxShadow: 'none'}}>
           <Toolbar className={classes.title}>
-            <Button className={classes.navButton}><strong>Projects</strong></Button>
-            <Button className={classes.navButton}><strong>Contact</strong></Button>
+            <a href="#projects" className={classes.navButton}><Button className={classes.navButton}><strong>Projects</strong></Button></a>
+            <a href="#contact" className={classes.navButton}><Button className={classes.navButton}><strong>Contact</strong></Button></a>
           </Toolbar>
         </AppBar>
       </div>

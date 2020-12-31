@@ -1,15 +1,15 @@
 import React from 'react';
 import Nav from './Nav';
 import Header from './Header';
-import { createMuiTheme } from '@material-ui/core/styles';
+import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
 import './App.css';
-import ProjectCard from './ProjectCard'
+import ProjectCardList from './ProjectCardList'
 
-const font = "'Fira Sans', sans-serif";
-const h123 = "'Noto Sans', sans-serif";
+const firaFont = "'Fira Sans', sans-serif";
+const notoFont = "'Noto Sans', sans-serif";
 
-const theme = createMuiTheme({
+const defaultTheme = createMuiTheme({
   palette: {
     primary: {
       main: '#303e69'
@@ -19,18 +19,21 @@ const theme = createMuiTheme({
     },
   },
   typography: {
-    fontFamily: font,
+    fontFamily: firaFont,
     h1: {
-      fontFamily: h123
+      fontFamily: notoFont
     },
     h2: {
-      fontFamily: h123
+      fontFamily: notoFont
     },
     h3: {
-      fontFamily: h123
+      fontFamily: notoFont
     }
   }
 });
+
+// well this is just amazing.
+const theme = responsiveFontSizes(defaultTheme);
 
 export default function App() {
   return(
@@ -38,7 +41,7 @@ export default function App() {
       <main>
         <Nav />
         <Header />
-        <ProjectCard />
+        <ProjectCardList />
       </main>
     </ThemeProvider>
   )
