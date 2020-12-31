@@ -2,6 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import {AppBar, Toolbar, Button } from '@material-ui/core';
 import ScrollAndHide from "./ScrollAndHide";
+import Pdf from './laura-tannahill-resume.pdf';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -34,7 +35,7 @@ export default function Nav(props) {
         <AppBar position="fixed" style={{ background: 'transparent', boxShadow: 'none'}}>
           <Toolbar className={classes.title}>
             <a href="#projects" className={classes.navButton}><Button className={classes.navButton}><strong>Projects</strong></Button></a>
-            <a href="#contact" className={classes.navButton}><Button className={classes.navButton}><strong>Contact</strong></Button></a>
+            < a href={Pdf} without rel="noopener noreferrer" target="_blank" className={classes.navButton}><Button className={classes.navButton}><strong>Résumé</strong></Button></a>
           </Toolbar>
         </AppBar>
       </div>

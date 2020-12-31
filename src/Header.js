@@ -1,7 +1,9 @@
 import React from 'react';
-import { Button, Grid, Typography, Container } from '@material-ui/core';
+import { Button, Grid, Typography, Container, IconButton, Link } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 // import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import SocialLinks from './SocialLinks'
+
 import logo from './laura.png';
 
 const useStyles = makeStyles((theme) => ({
@@ -13,14 +15,14 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: "20vh"
   },
   img: {
-    width: "20vh"
+    width: "15vh"
   },
   heroButtons: {
     marginTop: theme.spacing(4),
   },
 }));
 
-export default function Header() {
+export default function Header(props) {
   const classes = useStyles();
   return(
     <div
@@ -44,15 +46,7 @@ export default function Header() {
         </Typography>
         <div className={classes.heroButtons}>
           <Grid container spacing={2} justify="center">
-            <Grid item>
-              {/* <Button
-                variant="contained"
-                endIcon={<ExpandMoreIcon />}
-              >
-                More About Me
-              </Button> */}
-              {/* <img src={logo} alt="Laura Tannahill" className={classes.img}></img> */}
-            </Grid>
+            <SocialLinks />
           </Grid>
         </div>
       </Container>

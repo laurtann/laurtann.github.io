@@ -5,7 +5,7 @@ import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
 import './App.css';
 import ProjectCardList from './ProjectCardList';
-import Footer from './Footer'
+import Footer from './Footer';
 
 const firaFont = "'Fira Sans', sans-serif";
 const notoFont = "'Noto Sans', sans-serif";

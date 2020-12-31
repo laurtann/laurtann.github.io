@@ -1,7 +1,8 @@
 import React from "react";
-import { Typography, Link } from '@material-ui/core';
+import { Typography, Link, Grid } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import Copyright from './Copyright';
+import SocialLinks from './SocialLinks'
 
 const useStyles = makeStyles((theme) => ({
   footer: {
@@ -19,9 +20,9 @@ export default function Footer () {
       <Typography variant="h6" align="center" color="light" gutterBottom>
         Thanks for Stopping By!
       </Typography>
-      <Typography variant="subtitle1" align="center" color="light" component="p">
-        Social Links
-      </Typography>
+      <Grid container spacing={2} justify="center">
+        <SocialLinks />
+      </Grid>
       <Copyright />
     </footer>
   )
