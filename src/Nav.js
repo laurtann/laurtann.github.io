@@ -1,6 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import {AppBar, Toolbar, Button } from '@material-ui/core';
+import ScrollAndHide from "./ScrollAndHide";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -27,13 +28,15 @@ export default function Nav() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
-      <AppBar position="fixed" style={{ background: 'transparent', boxShadow: 'none'}}>
-        <Toolbar className={classes.title}>
-          <Button className={classes.navButton}><strong>Projects</strong></Button>
-          <Button className={classes.navButton}><strong>Contact</strong></Button>
-        </Toolbar>
-      </AppBar>
-    </div>
+    <ScrollAndHide threshold={0}>
+      <div className={classes.root}>
+        <AppBar position="fixed" style={{ background: 'transparent', boxShadow: 'none'}}>
+          <Toolbar className={classes.title}>
+            <Button className={classes.navButton}><strong>Projects</strong></Button>
+            <Button className={classes.navButton}><strong>Contact</strong></Button>
+          </Toolbar>
+        </AppBar>
+      </div>
+    </ScrollAndHide>
   );
 }

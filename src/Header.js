@@ -6,7 +6,6 @@ import logo from './laura.png';
 
 const useStyles = makeStyles((theme) => ({
   heroContent: {
-    backgroundColor: theme.palette.background.paper,
     padding: theme.spacing(8, 0, 6),
     color: '#303e69',
     textTransform: 'none',
