@@ -41,8 +41,8 @@ export const cards = [
     imgSrc: "https://github.com/laurtann/laurtann.github.io/blob/build/public/docs/robofriends.png?raw=true",
     description: `Search through our robot directory! A simple React app built while completing Andrei Neagoie's Udemy course.
     Tech Stack: React, JS & Tachyons`,
-    repo: "https://github.com/laurtann/tinyapp",
-    live: "https://tinyapp-laurtann.herokuapp.com/urls"
+    repo: "https://github.com/laurtann/robofriends",
+    live: "https://www.lauratannahill.com/robofriends"
   }
 ]
 
