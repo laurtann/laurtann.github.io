@@ -42,7 +42,7 @@ export default function Header(props) {
           I'm Laura, a Full-Stack Web Developer based in Halifax, NS
         </Typography>
         <Typography variant="p" align="center" paragraph>
-          Under Construction. In the meantime, check a few of my projects below!
+          Under Construction. In the meantime, check out a few of my projects below!
         </Typography>
         <div className={classes.heroButtons}>
           <Grid container spacing={2} justify="center">
