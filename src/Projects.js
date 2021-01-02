@@ -21,7 +21,7 @@ export const cards = [
     id: 3,
     name: "Mood4Food",
     imgSrc: "https://github.com/laurtann/laurtann.github.io/blob/build/public/docs/mood4food.png?raw=true",
-    description: `A food ordering app (team project). After an order is placed, the restaurant & user are updated of order status via text message and preparation time is dynamically rendered on the confirmation page.
+    description: `A food ordering app (team project). After an order is placed, the restaurant & user are updated of order status via text message and preparation time is dynamically rendered on the confirmation page *Text functionality not available on deployed version.
     Tech Stack: Twilio, Express, JS, EJS, PostgreSQL, Bootstrap & jQuery.`,
     repo: "https://github.com/laurtann/mood4food",
     live: "https://mood4food-laurtann.herokuapp.com/"
