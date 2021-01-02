@@ -24,7 +24,7 @@ export const cards = [
     description: `A food ordering app (team project). After an order is placed, the restaurant & user are updated of order status via text message and preparation time is dynamically rendered on the confirmation page.
     Tech Stack: Twilio, Express, JS, EJS, PostgreSQL, Bootstrap & jQuery.`,
     repo: "https://github.com/laurtann/mood4food",
-    live: null
+    live: "https://mood4food-laurtann.herokuapp.com/"
   },
   {
     id: 4,
