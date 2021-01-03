@@ -35,10 +35,10 @@ export default function ProjectCard (props) {
           </Typography>
         </CardContent>
         <CardActions>
-          <Link href={props.repo}>
+          <Link href={props.repo} target="_blank">
             Github Repo
           </Link>
-          <Link href={props.live}>
+          <Link href={props.live} target="_blank">
             Live Project
           </Link>
         </CardActions>
