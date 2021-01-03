@@ -30,8 +30,7 @@ export const cards = [
     id: 4,
     name: "Tinyapp",
     imgSrc: "https://github.com/laurtann/laurtann.github.io/blob/build/public/docs/tinyapp.png?raw=true",
-    description: `A URL shortening app. Login with: example@gmail.com, password 123 or create your own account!
-    Tech Stack: Express, JS, jQuery, Ajax, Bootstrap & EJS.`,
+    description: `A URL shortening app. Tech Stack: Express, JS, jQuery, Ajax, Bootstrap & EJS.`,
     repo: "https://github.com/laurtann/tinyapp",
     live: "https://tinyapp-laurtann.herokuapp.com/urls"
   },
