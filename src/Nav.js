@@ -2,7 +2,8 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import {AppBar, Toolbar, Button } from '@material-ui/core';
 import ScrollAndHide from "./ScrollAndHide";
-import Pdf from './laura-tannahill-resume.pdf';
+// import Pdf from './laura-tannahill-resume.pdf';
+const Pdf = "https://www.lauratannahill.com/resume/laura-tannahill-resume.pdf"
 
 const useStyles = makeStyles((theme) => ({
   root: {
