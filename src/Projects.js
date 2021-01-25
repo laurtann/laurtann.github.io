@@ -1,5 +1,14 @@
 export const cards = [
   {
+    id: 6,
+    name: "Layers",
+    imgSrc: "https://github.com/laurtann/laurtann.github.io/blob/build/public/docs/scheduler.png?raw=true",
+    description: `An Interview Scheduler App where a user can book and manage an interview with an instructor.
+    Tech Stack: ReactJS, PostgreSQL, Axios, WebSockets, Storybook, Jest & Cypress`,
+    repo: "https://github.com/laurtann/scheduler",
+    live: "https://scheduler-laurtann.netlify.app/"
+  },
+  {
     id: 1,
     name: "Scheduler",
     imgSrc: "https://github.com/laurtann/laurtann.github.io/blob/build/public/docs/scheduler.png?raw=true",
