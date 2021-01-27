@@ -4,7 +4,7 @@ export const cards = [
     name: "Layers",
     imgSrc: "https://github.com/laurtann/laurtann.github.io/blob/build/public/docs/layers.png?raw=true",
     description: `An app for music teachers and learners where users can isolate individual parts (stems) of their favourite songs and play or mute one or many.
-    Tech Stack: React, JavaScript, PostgreSQL, Node, Express, WaveSurfer & Material UI.`,
+    Tech Stack: React, JavaScript, PostgreSQL, Node, Express, WaveSurfer & Material UI. Demo login: email: mail@gmail.com, pw: password`,
     repo: "https://github.com/laurtann/LHL-final-project",
     live: "https://layers-irl.netlify.app/"
   },
