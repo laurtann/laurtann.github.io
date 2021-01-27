@@ -22,6 +22,7 @@ export default function ProjectCardList () {
           id={card.id}
           name={card.name}
           imgSrc={card.imgSrc}
+          techStack={card.techStack}
           description={card.description}
           repo={card.repo}
           live={card.live}

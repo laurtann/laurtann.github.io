@@ -33,6 +33,7 @@ export default function ProjectCard (props) {
           <Typography>
             {props.description}
           </Typography>
+          <br></br>
           <Typography>
             {props.techStack}
           </Typography>
