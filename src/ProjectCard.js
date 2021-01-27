@@ -33,6 +33,9 @@ export default function ProjectCard (props) {
           <Typography>
             {props.description}
           </Typography>
+          <Typography>
+            {props.techStack}
+          </Typography>
         </CardContent>
         <CardActions>
           <Link href={props.repo} target="_blank">
