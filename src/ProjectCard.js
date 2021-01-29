@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardActions, CardContent, CardMedia, Grid, Typography, Link } from '@material-ui/core';
+import { Card, CardActions, CardContent, CardMedia, Grid, Typography, Link, Button } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
@@ -7,6 +7,10 @@ const useStyles = makeStyles((theme) => ({
     height: '100%',
     display: 'flex',
     flexDirection: 'column',
+    '&:hover': {
+      boxShadow: "2px 3px 4px 2px rgb(48,62,105,0.5)",
+      opacity: 1,
+    }
   },
   cardMedia: {
     paddingTop: '56.25%', // 16:9
@@ -14,6 +18,9 @@ const useStyles = makeStyles((theme) => ({
   cardContent: {
     flexGrow: 1,
   },
+  buttons: {
+    justifyContent: "space-between"
+  }
 }));
 
 export default function ProjectCard (props) {
@@ -38,13 +45,13 @@ export default function ProjectCard (props) {
             {props.techStack}
           </Typography>
         </CardContent>
-        <CardActions>
-          <Link href={props.repo} target="_blank">
+        <CardActions className={classes.buttons}>
+          <Button href={props.repo} target="_blank">
             Github Repo
-          </Link>
-          <Link href={props.live} target="_blank">
+          </Button>
+          <Button href={props.live} target="_blank">
             Live Project
-          </Link>
+          </Button>
         </CardActions>
       </Card>
     </Grid>

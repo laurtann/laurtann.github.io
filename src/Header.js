@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 // import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import SocialLinks from './SocialLinks'
 
-import logo from './laura.png';
+import logo from './laurtann.png';
 
 const useStyles = makeStyles((theme) => ({
   heroContent: {
@@ -20,6 +20,9 @@ const useStyles = makeStyles((theme) => ({
   heroButtons: {
     marginTop: theme.spacing(4),
   },
+  image: {
+    width: "20%"
+  }
 }));
 
 export default function Header(props) {
@@ -42,8 +45,9 @@ export default function Header(props) {
           I'm Laura, a Full-Stack Web Developer based in Halifax, NS
         </Typography>
         <Typography variant="p" align="center" paragraph>
-          Under Construction. In the meantime, check out a few of my projects below!
+          Check out a few of the things I've been working on below!
         </Typography>
+        {/* <img src={logo} alt={"Laura Tannahill"} className={classes.image}></img> */}
         <div className={classes.heroButtons}>
           <Grid container spacing={2} justify="center">
             <SocialLinks />
