@@ -1,51 +1,58 @@
 import React from 'react';
-import Nav from './Nav';
-import Header from './Header';
+import Nav from './components/Nav';
+import Header from './components/Header';
+import AboutMe from './components/AboutMe';
+// import PhotoGallery from './components/PhotoGallery';
 import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
 import './App.css';
-import ProjectCardList from './ProjectCardList';
-import Footer from './Footer';
+import ProjectCardList from './components/ProjectCardList';
+import Footer from './components/Footer';
 
 const firaFont = "'Fira Sans', sans-serif";
-const notoFont = "'Noto Sans', sans-serif";
+const poppinsFont = "'Poppins', sans-serif";
 
 const defaultTheme = createMuiTheme({
-  palette: {
-    primary: {
-      main: '#303e69',
-      contrastText: '#fff'
+  palette : {
+    primary : {
+      main         : '#303e69',
+      contrastText : '#fff'
     },
-    secondary: {
-      main: '#Ff5f66',
-    },
+    secondary : {
+      main         : '#Ff5f66',
+      contrastText : '#fff'
+    }
   },
-  typography: {
-    fontFamily: firaFont,
-    h1: {
-      fontFamily: notoFont
+  typography : {
+    fontFamily : firaFont,
+    h1         : {
+      fontFamily : poppinsFont,
+      fontWeight : '700'
     },
-    h2: {
-      fontFamily: notoFont
+    h2 : {
+      fontFamily : poppinsFont,
+      fontWeight : '700'
     },
-    h3: {
-      fontFamily: notoFont
+    h3 : {
+      fontFamily : poppinsFont,
+      fontWeight : '700'
     }
   }
 });
 
-// well this is just amazing.
 const theme = responsiveFontSizes(defaultTheme);
 
-export default function App() {
-  return(
-    <ThemeProvider theme={theme}>
+export default function App () {
+  return (
+    <ThemeProvider theme={ theme }>
       <main>
         <Nav />
         <Header />
+        {/* <PhotoGallery /> */}
+        <AboutMe />
         <ProjectCardList />
       </main>
       <Footer />
     </ThemeProvider>
-  )
-};
+  );
+}
